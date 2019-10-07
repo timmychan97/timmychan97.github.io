@@ -1,85 +1,4 @@
-body, html {
-    overflow: hidden;
-}
-
-body {
-    margin: 0;
-    background-color: gray;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100% / 1.5 Roboto;
-}
-
-
-h1 {
-    font-size:2em;
-}
-section {
-    width:100%;
-    background-color: white;
-    background-size: 100% 100%;
-    padding-bottom: 50px;
-    min-height:20px;
-}
-
-
-
-
-.content {
-    font-weight: normal;
-    /*box-shadow: 2px 2px 4px #000000;*/
-    padding: 5px;
-    padding-top: 20px;
-    max-width: 1000px;
-    min-width: 400px;
-    margin:auto;
-}
-
-
-
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#profile {
-    flex-direction: row-reverse;
-    color:white;
-}
-
-#profile-pic {
-    max-width:250px;
-}
-
-
-.flex-container .item {
-    flex-grow: 1;
-    flex-basis: 200px; /*min width of div before it breaks to the next row*/
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
-    box-shadow: 2px 2px 8px #000000;
-
-
-
-    align-items: left;
-    margin:7px;
-    padding:10px;
-}
-
-.flex-container .item.simple{
-    -webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-}
-
-
-
-
-
-  /* Parallax base styles
-  --------------------------------------------- */
+/* Got help from https://keithclark.co.uk/articles/pure-css-parallax-websites/ */
 
 .parallax {
     height: 500px; /* fallback for older browsers */
@@ -95,8 +14,7 @@ section {
     position: relative;
     height: 500px; /* fallback for older browsers */
     height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    z-index:-10;
 }
 
 .parallax > ._section:nth-child(2n) {
@@ -111,28 +29,28 @@ section {
     bottom: 0;
 }
 
-._z1 {
+._z-1 {
     -webkit-transform: translateZ(90px) scale(.7);
     transform: translateZ(90px) scale(.7);
     z-index: 1;
 }
 
-._z2 {
+._z0 {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    z-index: 4;
+    z-index: 0;
 }
 
-._z3 {
+._z1 {
     -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
-    z-index: 3;
+    z-index: -1;
 }
 
-._z4 {
+._z2 {
     -webkit-transform: translateZ(-600px) scale(3);
     transform: translateZ(-600px) scale(3);
-    z-index: 2;
+    z-index: -2;
 }
 
 
@@ -181,20 +99,8 @@ section {
     position: absolute;
     left: 50%;
     top: 50%;
+    border: 1px solid black;
+    background: white;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-
-
-/* misc
---------------------------------------------- */
-.demo__info {
-position: absolute;
-z-index:100;
-bottom: 1vh;
-top: auto;
-font-size:80%;
-text-align:center;
-width: 100%;
 }
