@@ -12,6 +12,7 @@ body {
 
 h1 {
     font-size:2em;
+    margin:0;
 }
 section {
     width:100%;
@@ -50,6 +51,7 @@ section {
 
 #profile-pic {
     max-width:250px;
+    margin-top:-30px;
 }
 
 
