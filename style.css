@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+}
+section {
+    width:100%;
+    background-color: white;
+    background-size:100% 100%;
+    padding-bottom:50px;
+}
+
+.content {
+    font-weight: normal;
+    /*box-shadow: 2px 2px 4px #000000;*/
+    padding: 25px;
+    padding-top: 20px;
+    max-width: 1000px;
+    min-width: 400px;
+    margin:auto;
+}
+
+
+/*
+.flex-container .item:nth-child(3n) {
+  width: 100%;
+}*/
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#profile {
+    flex-direction: row-reverse;
+}
+
+
+.flex-container .item {
+    flex-grow: 1;
+    flex-basis: 300px; /*min width of div before it breaks to the next row*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    box-shadow: 2px 2px 8px #000000;
+
+
+
+    align-items: left;
+    margin:7px;
+    padding:10px;
+    background-color:rgb(255, 191, 128);
+}
+
+/*
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-container .item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    /*flex-basis: 33.3333%;*/
+    flex-basis: 300px; /*min width of div before it breaks to the next row*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    
+    background-color:blue;
+}*/
