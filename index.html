@@ -3,15 +3,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/parallax.css"/>
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
   <div class="parallax">
-    <div style="background: rgb(102,104,102);">
+    <div style="background:url(img/bg1.png);background-size:100% 100%;">
         <div class="content">
             <div id="profile" class="flex-container">
                 <div class="item simple" style="flex-grow:1;flex-basis:0;align-items:center; justify-content: flex-start;">
                     <img id="profile-pic" alt="Image of Timmy" src="img/profile-pic-circle.png"/>
+                    <div style="margin-top:-25px;">Timmy Chan</div>
+                    <div id="person-desc"></div>
+                    <script> document.getElementById("person-desc").innerHTML = "Student";</script>
                 </div>
                 <div class="item simple" style="flex-grow:9999;flex-basis:350px;">
                     <h1>Profile</h1>
