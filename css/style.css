@@ -1,5 +1,5 @@
 body, html {
-    min-width:350px;
+    min-width:500px;
     overflow: hidden;
 }
 
@@ -33,7 +33,7 @@ section {
     padding: 5px;
     padding-top: 20px;
     max-width: 1000px;
-    min-width: 320px;
+    min-width: 370px;
     margin:auto;
 }
 
