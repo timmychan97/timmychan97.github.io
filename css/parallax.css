@@ -25,7 +25,7 @@
 }
 
 .parallax > .parallax_section:nth-child(2n) {
-    background-color: red;
+    background-color: rgba(20,20,100,0.1);
 }
 
 .parallax > .parallax_section > ._layer {
