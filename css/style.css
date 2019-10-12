@@ -99,19 +99,14 @@ section {
 }
 
 .paragraph {
-    max-width: var(--content-max-width);
-    font: 70% / 1.5 Roboto;
-    padding-top: 30px;
-    padding-bottom: 30px;
     color: white;
     text-align: center;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    display: inline-table;
     left: 50%;
     top: 50%;
     position: relative;
     vertical-align: middle;
+    padding: 30px 0 30px 0;
 }
 
 .title_image_wrapper {
