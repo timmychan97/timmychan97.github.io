@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <style>
+
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .flex-container .item {
+                flex-grow: 1;
+                flex-basis: 200px; /*min width of div before it breaks to the next row*/
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                box-shadow: 2px 2px 8px #000000;
+                align-items: center;
+                margin: 7px;
+                padding: 10px;
+            }
+
+            .flex-container .item.simple {
+                box-shadow: none;
+            }
+
+        </style>
+    </head>
+
+<body>
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+</body>
+</html>
