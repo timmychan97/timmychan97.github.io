@@ -1,3 +1,9 @@
+:root {
+    --content-max-width: 1000px; 
+}
+
+
+
 body, html {
     min-width:400px;
     overflow: hidden;
@@ -32,7 +38,7 @@ section {
     /*box-shadow: 2px 2px 4px #000000;*/
     padding: 5px;
     padding-top: 20px;
-    max-width: 1000px;
+    max-width: var(--content-max-width);
     min-width: 370px;
     margin:auto;
 }
@@ -93,6 +99,22 @@ section {
     border: 1px solid white;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.paragraph {
+    max-width: var(--content-max-width);
+    font: 70% / 1.5 Roboto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-table;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    vertical-align: middle;
 }
 
 .title_image_wrapper {
