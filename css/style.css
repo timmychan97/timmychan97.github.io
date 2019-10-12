@@ -16,6 +16,14 @@ body {
     font: 100% / 1.5 Roboto;
 }
 
+a:link{
+    color:lightskyblue;
+    text-decoration: none;
+}
+a:visited {
+    color: lightskyblue;
+    text-decoration: none;
+}
 
 h1 {
     font-size:2em;
@@ -39,7 +47,7 @@ section {
     padding: 5px;
     padding-top: 20px;
     max-width: var(--content-max-width);
-    min-width: 370px;
+    /*min-width: 370px;*/
     margin:auto;
 }
 
