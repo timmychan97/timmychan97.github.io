@@ -1,0 +1,34 @@
+.cell {
+  padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+  color:black;
+	font-family:\5FAE\8F6F\96C5\9ED1;
+  font-size:11.0pt;
+
+}
+
+
+
+.cell.rowspan2 {
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+
+.realLocation {
+  border-top:none;
+  border-right:.5pt solid black;
+  border-bottom:none;
+  border-left:none;
+}
+
+.dateTime {
+  border: .5pt solid black;
+  font-weight: 700;
+  font-size:10.0pt;
+	white-space:normal;
+}
