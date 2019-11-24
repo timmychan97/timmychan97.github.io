@@ -20,7 +20,7 @@
     	 padding-left: 20%;
     	 margin-left: 30%;
     	 ">
-    	 <tbody>
+    	 <tbody id="timeScheduleBody">
     		 <tr style="height: 20pt;">
 
            <td class="tableheader" style="width: 24%;/* margin-left: 100px; */">目的</td>
@@ -50,66 +50,48 @@
      </tr>
 
 
-     <tr>
-      <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
-        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-            吃飯
-        </div><div class="timeTag">01月12日 20:05</div></div>
-      </td>
-      <td class="cell details"> //--解説--// </td>
-     </tr>
-
-
-      <tr>
-       <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
-         <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-             觀光
-         </div><div class="timeTag">01月13日 10:05</div></div>
-       </td>
-       <td class="cell details">城隍庙</td>
-      </tr>
 
 
 
-      <tr>
-      <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
-      <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-      觀光
-      </div><div class="timeTag">01月13日 14:05</div></div>
-      </td>
-      <td class="cell details">豫园</td>
-      </tr>
-
-      <tr>
-      <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
-      <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-      觀光
-      </div><div class="timeTag">01月13日 20:05</div></div>
-      </td>
-      <td class="cell details">上海老街</td>
-      </tr>
-      
-      <tr>
-      <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
-      <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-      吃早餐
-      </div><div class="timeTag">01月14日 08:05</div></div>
-      </td>
-      <td class="cell details">到什麽地方吃上海陽春麵作早餐</td>
-      </tr>
-
-
-
-
-
-
-     <tr>
-      <td height="22" class="cell goal" style="height:16.5pt">&nbsp;</td>
-      <td class="cell details"> //--解説--// </td>
-     </tr>
     </tbody></table>
 
     </div>
+
+    <script>
+
+      var timeScheduleBody = document.getElementById("timeScheduleBody");
+      function addEvent(datetime, goal, details){
+        var tr = document.createElement('tr');
+        tr.innerHTML = `
+        <tr>
+        <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
+        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
+        ${goal}
+        </div><div class="timeTag">${datetime}</div></div>
+        </td>
+        <td class="cell details">${details}</td>
+        </tr>
+        `;
+
+        timeScheduleBody.appendChild(tr);
+      }
+
+      addEvent("01月12日 20:05", "吃飯", " //--解説--// ");
+      addEvent("01月13日 10:05", "觀光", "城隍庙");
+      addEvent("01月13日 17:05", "觀光", "豫园");
+      addEvent("01月13日 20:05", "觀光", "上海老街");
+      addEvent("01月14日 08:05", "吃早餐", "到什麽地方吃上海陽春麵作早餐");
+      addEvent("01月14日 10:05", "觀光", "上海自然博物馆<img style='width:100%' src='https://pic2.zhimg.com/80/v2-2e6d2beee087fa8f99bd1f3eab4de55f_hd.jpg'>");
+      addEvent("01月14日 16:05", "觀光", "外灘");
+      addEvent("01月14日 18:05", "觀光", "陸家嘴, 七點東方明珠塔開始燈光秀");
+      addEvent("01月14日 19:25", "觀光", "坐船渡江, 二元便可以乘搭");
+      addEvent("01月14日 22:20", "回酒店", "乘搭計程車回酒店休息");
+      addEvent("01月15日 11:25", "觀光", "世博會博物馆, 清明上河图的动态还原图");
+
+
+
+    </script>
+
 </body>
 
 </html>
