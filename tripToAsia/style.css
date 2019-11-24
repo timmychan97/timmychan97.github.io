@@ -77,7 +77,7 @@
 
 
 .timeTag {
-  transform: translateY(-50%) translateX(-90%);
+  transform: translateY(-50%) translateX(-88%);
   display: flex;
   position: absolute;
   align-items: center;
