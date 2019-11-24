@@ -1,0 +1,107 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=300, initial-scale=1">
+
+	<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+</head>
+
+<body>
+  <div id="timeSchedule" align="center">
+
+    	<table border="0" cellpadding="0" cellspacing="0" style="
+    	 border-collapse:
+    	 collapse;
+    	 width: 70%;
+    	 max-width: 500pt;
+    	 padding-left: 20%;
+    	 margin-left: calc(4% + 100px);
+    	 ">
+    	 <tbody id="timeScheduleBody">
+    		 <tr style="height: 20pt;">
+           <td class="tableheader" style="width: 24%;/* margin-left: 100px; */">目的</td>
+           <td class="tableheader" style="width: 55%;">解説</td>
+          </tr>
+
+
+
+
+    	<tr>
+
+       <td class="cell stayLocation" style="height: 8.25pt; background: #8497B0;"></td>
+       <td class="cell realLocation" style="height: 8.25pt; background: #8497B0;"></td>
+      </tr>
+
+     <tr>
+      <td class="cell goal" style="height:16.5pt">去杭州</td>
+      <td class="cell details">坐火車去杭州需時一小時三十五分鐘</td>
+     </tr>
+
+
+
+
+
+    </tbody></table>
+
+    </div>
+
+    <script>
+
+      var timeScheduleBody = document.getElementById("timeScheduleBody");
+      function addEvent(datetime, goal, details){
+        var tr = document.createElement('tr');
+        tr.innerHTML = `
+        <tr>
+        <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
+        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
+        ${goal}
+        </div><div class="timeTag">${datetime}</div></div>
+        </td>
+        <td class="cell details">${details}</td>
+        </tr>
+        `;
+
+        timeScheduleBody.appendChild(tr);
+      }
+      function imgStr(src){
+        return "<img style='width:100%;padding-bottom:5px;' src='"+src+"'>"
+      }
+
+      addEvent("01月18日 13:00", "下火車", "到達杭州");
+      addEvent("01月18日 13:25", "去酒店", "去酒店放下行李");
+      addEvent("01月18日 14:20", "吃東西", "什麽的");
+      addEvent("01月18日 17:05", "觀光", "杭州宋城景区, 參觀宋代风格及文化的主題公園，裏面有文化表演，清明上河图电影馆，5D实景体验剧《大地震》等等，在不同的時間演出。又早上十點到夜晚六點都有不同的演出。門票三百元"+
+                                        imgStr('http://n1-q.mafengwo.net/s11/M00/35/30/wKgBEFpTHFGAMTP3AD3ZZpvWR6I16.jpeg?imageMogr2%2Fthumbnail%2F%21690x450r%2Fgravity%2FCenter%2Fcrop%2F%21690x450%2Fquality%2F90')+
+																	      imgStr('http://p1-q.mafengwo.net/s9/M00/80/42/wKgBs1fE-6KASI2wAA0tyecfIgM17.jpeg?imageMogr2%2Fthumbnail%2F%21690x450r%2Fgravity%2FCenter%2Fcrop%2F%21690x450%2Fquality%2F90')+
+																	      imgStr('http://p1-q.mafengwo.net/s10/M00/47/24/wKgBZ1ms0-uAP6J0AAoxW5mYyMQ81.jpeg?imageMogr2%2Fthumbnail%2F%21690x450r%2Fgravity%2FCenter%2Fcrop%2F%21690x450%2Fquality%2F90'));
+			addEvent("01月18日 22:20", "回酒店", "乘搭計程車回酒店休息");
+      addEvent("01月19日 08:05", "去東陽", "離開酒店乘搭火車往義烏去");
+      addEvent("01月19日 10:05", "觀光", "横店影视城，門票299元"+
+                                        imgStr('https://i0.wp.com/www.xuehua.us/wp-content/uploads/2018/04/259c6cad.jpg') +
+																				imgStr('https://i1.kknews.cc/SIG=23i6aif/s7800007883q9rrpnpo.jpg') +
+																				imgStr('https://i2.kknews.cc/SIG=2pjhf0e/s7o0000nrp43p6987n5.jpg') +
+																				imgStr('https://i1.kknews.cc/SIG=2dbs4hf/s770000s5nn969no446.jpg') +
+																				imgStr('https://media-cdn.tripadvisor.com/media/daodao/photo-s/0b/b5/11/f7/20160610085402-img-0938.jpg') +
+																	      imgStr('https://b1-q.mafengwo.net/s11/M00/60/49/wKgBEFqkw72APrwLAAqBM6uyVXg63.jpeg'));
+      addEvent("01月19日 20:25", "回杭州", "玩了一整天累了");
+      addEvent("01月19日 22:20", "回酒店", "回酒店休息");
+      addEvent("01月20日 10:25", "游湖", "游西湖十景，100元"+
+				imgStr('https://twgreatdaily.com/images/elastic/J-h/J-hARGwB8g2yegNDnVYh.jpg') +
+				imgStr('http://p3.pstatp.com/large/5519000326b6e06c945a') +
+				imgStr('https://www.zhongguofeng.com/uploads/allimg/170315/6-1F3151J547.jpg'));
+      addEvent("01月20日 19:35", "離開", "坐火車離開杭州往廣州去");
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
