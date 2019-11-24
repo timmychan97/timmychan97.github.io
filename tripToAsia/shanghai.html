@@ -18,22 +18,13 @@
     	 width: 70%;
     	 max-width: 500pt;
     	 padding-left: 20%;
-    	 margin-left: 30%;
+    	 margin-left: calc(4% + 100px);
     	 ">
     	 <tbody id="timeScheduleBody">
     		 <tr style="height: 20pt;">
-
            <td class="tableheader" style="width: 24%;/* margin-left: 100px; */">目的</td>
            <td class="tableheader" style="width: 55%;">解説</td>
           </tr>
-
-    <!-- Copy this to make a new row
-
-
-
-
-    -->
-
 
 
 
@@ -75,18 +66,31 @@
 
         timeScheduleBody.appendChild(tr);
       }
+      function imgStr(src){
+        return "<img style='width:100%;padding-bottom:5px;' src='"+src+"'>"
+      }
 
       addEvent("01月12日 20:05", "吃飯", " //--解説--// ");
       addEvent("01月13日 10:05", "觀光", "城隍庙");
-      addEvent("01月13日 17:05", "觀光", "豫园");
+      addEvent("01月13日 17:05", "觀光", "豫园"+
+                                        imgStr('https://pic1.zhimg.com/80/v2-3683dbb63f42e4fd36338e09011c7425_hd.jpg')+
+                                        imgStr('https://pic1.zhimg.com/80/v2-2ffbd9dd78b67ad480205c89179f56ce_hd.jpg'));
       addEvent("01月13日 20:05", "觀光", "上海老街");
       addEvent("01月14日 08:05", "吃早餐", "到什麽地方吃上海陽春麵作早餐");
-      addEvent("01月14日 10:05", "觀光", "上海自然博物馆<img style='width:100%' src='https://pic2.zhimg.com/80/v2-2e6d2beee087fa8f99bd1f3eab4de55f_hd.jpg'>");
-      addEvent("01月14日 16:05", "觀光", "外灘");
+      addEvent("01月14日 10:05", "觀光", "上海自然博物馆" +
+                                        imgStr('https://pic2.zhimg.com/80/v2-2e6d2beee087fa8f99bd1f3eab4de55f_hd.jpg')+
+                                        imgStr('https://pic4.zhimg.com/80/v2-e8acf276f234c8b7ca710b2d711a7d0f_hd.jpg')+
+                                        imgStr('https://pic3.zhimg.com/80/v2-07ce1d3110507bc69be57b1cbb7cee2e_hd.jpg'));
+      addEvent("01月14日 16:05", "觀光", "外灘"+
+                                        imgStr('https://pic3.zhimg.com/80/v2-47458b73ec65272d04e17ac97cefacea_hd.jpg'));
       addEvent("01月14日 18:05", "觀光", "陸家嘴, 七點東方明珠塔開始燈光秀");
-      addEvent("01月14日 19:25", "觀光", "坐船渡江, 二元便可以乘搭");
+      addEvent("01月14日 19:25", "觀光", "乘坐浦江游船, 游览沿江夜景。在船上观赏上海最繁华的夜景, 98元才可以乘搭");
       addEvent("01月14日 22:20", "回酒店", "乘搭計程車回酒店休息");
       addEvent("01月15日 11:25", "觀光", "世博會博物馆, 清明上河图的动态还原图");
+      addEvent("01月18日 11:25", "離開", "坐火車離開上海往杭州去");
+
+
+
 
 
 
