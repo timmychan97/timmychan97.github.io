@@ -17,6 +17,29 @@
 
 
 
+.stayLocation {
+  width: 59pt;
+  border: .5pt solid black;
+  border-right: none;
+}
+
+.realLocation {
+  border-top:.5pt solid black;
+  border-right:.5pt solid black;
+  border-bottom:.5pt solid black;
+  border-left:none;
+}
+
+.realLocation.noborder {
+  border-top:none;
+  border-right:.5pt solid black;
+  border-bottom:none;
+  border-left:none;
+}
+
+
+
+
 
 
 
@@ -37,12 +60,6 @@
 
 }
 
-.stayLocation {
-  width: 59pt;
-  border: .5pt solid black;
-  border-right: none;
-}
-
 
 
 
@@ -57,19 +74,6 @@
   white-space: nowrap;
 }
 
-.realLocation {
-  border-top:.5pt solid black;
-  border-right:.5pt solid black;
-  border-bottom:.5pt solid black;
-  border-left:none;
-}
-
-.realLocation.noborder {
-  border-top:none;
-  border-right:.5pt solid black;
-  border-bottom:none;
-  border-left:none;
-}
 
 .dateTime {
   border: .5pt solid black;
