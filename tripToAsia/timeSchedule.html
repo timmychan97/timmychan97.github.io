@@ -30,7 +30,7 @@
   	 border-collapse: collapse;
   	 max-width: 500pt;
   	 margin-left: 115px;
-		 margin-bottom: 100px;
+		 margin-bottom: 10px;
   	 ">
   	 <tbody id="timeScheduleBody">
   		 <tr style="height: 20pt;">
@@ -42,6 +42,16 @@
        <td class="stayLocation cell " style="height: 8.25pt; background: #8497B0;"></td>
        <td class="cell realLocation" style="height: 8.25pt; background: #8497B0;"></td>
       </tr>
+
+			<tr>
+				<td colspan=2 class="cell" style="border:1px solid black">
+					<div style="display: flex;">
+						<div  style="display: flex; padding:15px; width:100%; white-space: pre-wrap;
+						align-items: center;
+						justify-content: center;">飛機上，挪威到北京</div>
+					</div>
+				</td>
+			</tr>
 
 
 
@@ -114,21 +124,21 @@
 				timeScheduleBody.appendChild(tr);
 			}
 
-      addEvent("01月12日 09:55", "北京", "#");
+      addEvent("01月12日 09:55", "北京", "#", "");
 			addEventWithoutLink("01月12日 15:15", "火車上");
-      addEvent("01月12日 20:05", "上海", "shanghai.html", "外灘\n好吃的\n陸家嘴\n\n\n\n\n\n上海老街");
+      addEvent("01月12日 20:05", "上海", "shanghai.html", "外灘\n好吃的\n陸家嘴\n\n\n上海老街");
 			addEventWithoutLink("01月18日 11:25", "火車上");
-      addEvent("01月18日 13:00", "杭州", "hangzhou.html");
+      addEvent("01月18日 13:00", "杭州", "hangzhou.html", "東陽橫店影視城\n游湖");
 			addEventWithoutLink("01月20日 19:35", "火車上");
-      addEvent("01月21日 12:22", "廣州", "上海老街");
+      addEvent("01月21日 12:22", "廣州", "guangdong.html", "深圳\n");
 			addEventWithoutLink("01月26日 19:25", "火車上");
-      addEvent("01月27日 08:15", "張家界", "到什麽地方吃上海陽春麵作早餐");
+      addEvent("01月27日 08:15", "張家界", "zhangjiajie.html", "天門山\n玻璃橋\n袁家界");
 			addEventWithoutLink("01月29日 12:21", "飛機上");
-			addEvent("01月29日 14:04", "成都", "陸家嘴, 七點東方明珠塔開始燈光秀");
+			addEvent("01月29日 14:04", "成都", "chengdu.html", "寬窄巷子\n麻婆豆腐\n火鍋\n熊貓");
 			addEventWithoutLink("02月04日 07:35", "飛機上，轉香港");
-      addEvent("02月04日 20:55", "東京", "乘坐浦江游船, 游览沿江夜景。在船上观赏上海最繁华的夜景, 98元才可以乘搭");
+      addEvent("02月04日 20:55", "東京", "tokyo.html", "秋葉原\n溫泉");
 			addEventWithoutLink("02月11日 13:10", "飛機上，轉首爾");
-      addEvent("02月11日 20:25", "北京", "乘搭計程車回酒店休息");
+      addEvent("02月11日 20:25", "北京", "beijing.html", "三里屯\n天壇\n北京填鴨");
 			addEventWithoutLink("02月16日 11:55", "\n完\n\n");
 
 
