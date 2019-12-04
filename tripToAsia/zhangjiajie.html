@@ -1,0 +1,71 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=300, initial-scale=1">
+
+	<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+</head>
+
+<body>
+  <div id="timeSchedule" align="center">
+  	<table border="0" cellpadding="0" cellspacing="0" style="
+  	 border-collapse: collapse;
+  	 max-width: 500pt;
+  	 margin-left: 115px;
+		 margin-bottom: 10px;">
+
+		 	<tbody id="timeScheduleBody">
+				<tr style="height: 20pt;">
+					<td class="tableheader" style="width: 24%;/* margin-left: 100px; */">目的</td>
+					<td class="tableheader" style="width: 55%;">解説</td>
+				</tr>
+
+				<tr>
+					<td class="cell stayLocation" style="height: 8.25pt; background: #8497B0;"></td>
+					<td class="cell realLocation" style="height: 8.25pt; background: #8497B0;"></td>
+				</tr>
+
+				<tr>
+					<td class="cell goal" style="height:16.5pt">去廣東</td>
+					<td class="cell details">坐火車去廣東需時七小時</td>
+				</tr>
+
+    </tbody></table>
+
+    </div>
+
+    <script>
+
+      var timeScheduleBody = document.getElementById("timeScheduleBody");
+      function addEvent(datetime, goal, details){
+        var tr = document.createElement('tr');
+        tr.innerHTML = `
+        <tr>
+        <td height="22" class="cell goal" style=""><div style="height: 100%;display: flex;">
+        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
+        ${goal}
+        </div><div class="timeTag">${datetime}</div></div>
+        </td>
+        <td class="cell details">${details}</td>
+        </tr>
+        `;
+
+        timeScheduleBody.appendChild(tr);
+      }
+      function imgStr(src){
+        return "<img style='width:100%;padding-bottom:5px;' src='"+src+"'>"
+      }
+
+      addEvent("01月12日 20:05", "吃飯", " //--解説--// ");
+
+
+
+
+    </script>
+
+</body>
+
+</html>
