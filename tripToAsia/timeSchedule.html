@@ -31,11 +31,30 @@
 			border: none;
 			outline: 0 none;
 	 }
-	 button:hover{
+
+	 .button {
+		 -moz-box-sizing: border-box;
+		  display:flex;/*CSS3*/
+		  align-items:center;/*Vertical align*/
+		  justify-content:center;/*horizontal align*/
+		 color: black;
+			font-size: 16pt;
+			background: #bdd7ee;
+			border-radius: 10px;
+			padding: 10pt 17pt 10pt 17pt;
+			border: none;
+			outline: 0 none;
+			text-decoration: none;
+	 }
+
+	 .button:hover{
 		 	background: #cee3f7;
 	 }
-	 button:active {
+	 .button:active {
 		 	background: #c7def3;
+	 }
+	 footer {
+		 max-width: calc(500pt + 115px);
 	 }
 
 
@@ -80,7 +99,7 @@
 
     </tbody></table>
 		<footer>
-					<button onclick="window.location.href = 'https://www.kdocs.cn/l/sAmKFJHKQ';">點擊瀏覽詳細質料</button>
+					<a href="https://www.kdocs.cn/l/sAmKFJHKQ"  class="button" target="_blank">點擊瀏覽詳細質料</a>
 		</footer>
     </div>
 
