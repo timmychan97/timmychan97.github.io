@@ -3,21 +3,31 @@
     <head>
         <meta name="viewport" content="width=device-width">
         <style>
+
             .grid-container {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: repeat(auto-fit, 100px);
+                justify-content: center;
+
+                background-color: red;
             }
 
             .grid-container .item {
-                box-shadow: 2px 2px 8px #000000;
                 margin: 7px;
                 padding: 10px;
+
+                background-color: lightblue;
+            }
+
+            .grid-container .item.simple {
+                box-shadow: none;
             }
 
         </style>
     </head>
 
 <body>
+  <div class="main">
     <div class="grid-container">
         <div class="item">1</div>
         <div class="item">2</div>
@@ -30,6 +40,6 @@
         <div class="item">9</div>
         <div class="item">10</div>
     </div>
-
+  </div>
 </body>
 </html>
