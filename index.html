@@ -15,9 +15,9 @@
     <p>Redirecting in <span id="counter"></span>...</p>
     <script>
         onload = () => {
-            countDown = 5;
-            count = countDown;
-            counter = document.getElementById("counter");
+            const countDown = 5;
+            let count = countDown;
+            const counter = document.getElementById("counter");
             counter.innerHTML = count--;
             const interval = setInterval(_ => {
                 counter.innerHTML = count--;
